@@ -5,6 +5,7 @@ Python script for generating Bitcoin Private key from randomly picking Bingo bal
 This simple utility help you generate a super secure Bitcoin Private key using bingo balls numbered 1 to 64. Before beginning you must discard bingo balls higher than 64. You only keep balls from 1 to 64. Remember to always put back the last picked ball in the hat between each pick. 
 
 Example of use:
+<code>
 $ python bingowallet.py 
 
 OK, now it's time for you to start picking bingo balls randomly
@@ -66,3 +67,4 @@ SMI4rJixIFo0fhBEsvGutu6C7Z7wPiEeL6n3Ek2liHU=
 
 Private Key Hexadecimal Format (64 characters [0-9A-F]):
 48c238ac98b1205a347e1044b2f1aeb6ee82ed9ef03e211e2fa9f7124da58875
+</code>
