@@ -71,7 +71,7 @@ for i in range(64):
     privHex += numHex;
 
 print("\nPrivate Key Hexadecimal Format (64 characters [0-9A-F]):");
-print(privHex);
+print(privHex.upper());
 
 if privHex < MIN_VALUE or privHex > MAX_VALUE:
     print("\nYOU ARE VERY BAD AT PICKING UP RANDOM BALLS. YOUR PRIVATE KEY IS INVALID");
