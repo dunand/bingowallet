@@ -52,8 +52,8 @@ for i in range(43):
             break;
     numBin = "{0:06b}".format(numDec);
     if i == 42:
-        numBin = numBin[0:4]+'00';
-        numDec = int(numBin, 2);
+        numBin = numBin[0:4];
+        numDec = int(numBin+'00', 2);
     privBin += numBin;
     numBase64 = base64[numDec];
     privBase64 += numBase64;
