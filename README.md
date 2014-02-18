@@ -1,16 +1,27 @@
 bingowallet
 ===========
 
-This simple utility help you generate a super secure Bitcoin Private key using bingo balls numbered 1 to 64. Before beginning you must discard bingo balls higher than 64. You only keep balls from 1 to 64. Remember to always put back the last picked ball in the hat between each pick. 
+This simple utility to help you generate a super secure Bitcoin Private key using anything you have to pick random numbers. A dice, a coin, a bag of marbles. I writed this script because I wanted to generate a bitcoin Private key using bingo balls numbered from 1 to 75.
 
 Example of use:
 <pre>
 $ python bingowallet.py 
 
-OK, now it's time for you to start picking bingo balls randomly
-You need to pick 43 balls to generate 256 bits of randomness
-Enter each ball number one by one. Valid number is 1 to 64
-Remember to always put back the last picked ball in the hat between each pick
+This program will help you generate a Bitcoin private key using a simple random number generator like a dice, a coin or a bag of bingo balls!
+
+The first step is to pick a base.
+If you use a 6 sided dice, choose 6.
+If you use a 12 sided dice, choose 12.
+If you want to use a coin, choose 2.
+If you want to pick bingo balls in a bag you choose 75...
+Your base: 75
+
+Now you need to choose if you start to count at 0 or 1. For example, if you use a dice numbered from 1 to 6, choose 1.
+You want to start to count at 0 or 1: 1
+
+OK, now it's time for you to start picking numbers randomly
+You need to pick 42 numbers to generate 256 bits of randomness
+Enter each number one by one. Valid number is 1 to 75
 
 #1: 19
 #2: 13
@@ -25,45 +36,44 @@ Remember to always put back the last picked ball in the hat between each pick
 #11: 41
 #12: 53
 #13: 32
-#14: 34
-#15: 2
-#16: 5
-#17: 45
-#18: 48
-#19: 7
-#20: 47
-#21: 46
-#22: 47
+#14: 2
+#15: 5
+#16: 45
+#17: 48
+#18: 7
+#19: 73
+#20: 1
+#21: 70
+#22: 46
 #23: 59
 #24: 3
-#25: 60
+#25: 67
 #26: 26
-#27: 60
-#28: 49
-#29: 16
-#30: 35
-#31: 5
-#32: 31
-#33: 12
-#34: 59
-#35: 4056
-Each character typed must be a numeral 1-64.  Try again.
-#35: 40
-#36: 56
-#37: 5
-#38: 37
-#39: 55
-#40: 38
-#41: 35
-#42: 8
-#43: 21
+#27: 18
+#28: 44
+#29: 8
+#30: 55
+#31: 38
+#32: 27
+#33: 35
+#34: 8
+#35: 75
+#36: 453
+Each character typed must be a numeral 1 - 75.  Try again.
+#36: 45
+#37: 3
+#38: 56
+#39: 25
+#40: 23
+#41: 61
+#42: 6
 
 Private key Binary Format:
-010010001100001000111000101011001001100010110001001000000101101000110100011111100001000001000100101100101111000110101110101101101110111010000010111011011001111011110000001111100010000100011110001011111010100111110111000100100100110110100101100010000111010100
-
-Private key Base64 (44 characters):
-SMI4rJixIFo0fhBEsvGutu6C7Z7wPiEeL6n3Ek2liHU=
+1111000111110100111101111100110000000101000110010011110100010100101001111111101110101111010110111100100001110001010000100000010110101001101000011110101001000001101111001010010111010010100000111011110111011111101111111111001110010010101000101101101110101001
 
 Private Key Hexadecimal Format (64 characters [0-9A-F]):
-48C238AC98B1205A347E1044B2F1AEB6EE82ED9EF03E211E2FA9F7124DA58875
+F1F4F7CC05193D14A7FBAF5BC8714205A9A1EA41BCA5D283BDDFBFF392A2DBA9
+
+Private key Base64 (44 characters):
+8fT3zAUZPRSn+69byHFCBamh6kG8pdKDvd+/85Ki26k=
 </pre>
